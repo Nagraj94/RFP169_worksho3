@@ -17,7 +17,6 @@ public class Players {
 
     @Override
     public String toString() {
-        System.out.println("Player Name " + playerName);
         return "Player Name " + playerName ;
     }
 }
