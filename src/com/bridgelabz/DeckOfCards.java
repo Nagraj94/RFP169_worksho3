@@ -65,6 +65,9 @@ public class DeckOfCards {
 
         return false;
     }
+    public void shuffleCards(){
+        Collections.shuffle(deck);
+    }
     public void displayCards(){
         System.out.println(deck);
     }
