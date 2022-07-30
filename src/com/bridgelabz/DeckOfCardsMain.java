@@ -3,13 +3,22 @@ package com.bridgelabz;
 import java.util.Scanner;
 
 public class DeckOfCardsMain {
- Scanner sc = new Scanner(System.in);
+ static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         DeckOfCards cards = new DeckOfCards();
-//        cards.initializeCards();
-//        cards.displayCards();
-        cards.addPlayer();
-
+        while (true){
+            System.out.println("");
+            System.out.println("1.Add players\n2.Shuffle cards\n3.Distribute cards");
+            int check = sc.nextInt();
+            if (check == 1){
+                cards.initializeCards();
+                cards.addPlayer();
+            } else if (check == 2) {
+                cards.shuffleCards();
+            } else if (check == 3) {
+                cards.distributeCards();
+            }
+        }
 
     }
 
