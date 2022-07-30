@@ -7,11 +7,11 @@ public class DeckOfCardsMain {
     public static void main(String[] args) {
         DeckOfCards cards = new DeckOfCards();
         while (true){
+            cards.initializeCards();
             System.out.println("");
             System.out.println("1.Add players\n2.Shuffle cards\n3.Distribute cards");
             int check = sc.nextInt();
             if (check == 1){
-                cards.initializeCards();
                 cards.addPlayer();
             } else if (check == 2) {
                 cards.shuffleCards();
